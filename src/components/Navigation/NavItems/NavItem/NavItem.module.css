@@ -1,0 +1,40 @@
+.NavItem{
+    display: block;
+    width : 100%; 
+    box-sizing: border-box;
+    margin: 10px 0;
+
+}
+
+.NavItem a{
+    color:white;
+    width: 100%;
+    padding: 16px 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.NavItem a:hover,
+.NavItem a:active,
+.NavItem a.active{
+    background-color: bisque;
+    border-bottom: 4px solid lightblue;
+    color: blue;
+}
+
+@media (min-width:500px){
+    .NavItem{
+    display: flex;
+    height: 100%; 
+    width: auto;
+    align-items: center;
+    margin: 0;
+    }
+
+    .NavItem a{
+        color: white;
+        height:100%;
+        padding: 16px 10px;
+        border-bottom: 4px solid transparent;
+    }
+}
